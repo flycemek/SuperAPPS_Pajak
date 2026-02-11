@@ -1,0 +1,33 @@
+# Core dependencies - install first
+pip>=24.0
+setuptools>=69.0.0
+wheel>=0.42.0
+
+# FastAPI and server
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Pydantic and config
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Web scraping
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# Image processing - use newer versions with pre-built wheels
+Pillow>=10.3.0
+numpy>=1.24.0,<2.0.0
+opencv-python-headless>=4.9.0.80
+
+# PyTorch - CPU version untuk Windows (lebih ringan)
+torch>=2.1.0,<2.4.0
+torchvision>=0.16.0,<0.19.0
+
+# EasyOCR - install terakhir
+easyocr>=1.7.0
+
+# WAF Bypass
+curl_cffi>=0.7.0
