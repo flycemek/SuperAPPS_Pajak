@@ -104,7 +104,7 @@ class OCRService:
         image = Image.open(io.BytesIO(image_bytes))
         
         # Convert to RGB if necessary
-        if image.mode != 'RGB':
+        if image.mode != 'RGB':                                     
             image = image.convert('RGB')
         
         # Analyze image brightness untuk adaptive enhancement
